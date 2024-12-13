@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="192x192"  href="img/favicon/android-icon-192x192.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+        <link rel="manifest" href="img/favicon/manifest.json">
+        <meta name="msapplication-TileColor" content="#ffffff">
+        <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+        <meta name="theme-color" content="#ffffff">
+    <title>AeroVision</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+         <nav class="navbar navbar-expand-md  px-md-5 fixed-top bg-danger-subtle opacity-75" >
+          <div class="container-fluid">
+            <a href="#inicio" class="navbar-brand"><img class="w-50 h-50" src="img/brandpng3pequeno.png" alt="Logo"></a>        
+          <!-- Modal carrito 1 -->
+            <div class="d-md-none me-3 ms-auto" data-bs-toggle="modal" data-bs-target="#modalcarrito1">             
+              <img class="w-75 h-75 cursor-pointer" src="img/carrito.png" alt="carrito de compras" >   
+            </div>
+          <!-- Modal carrito 1 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"  >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav text-start pt-2 w-100">
+              <li class="nav-item  w-100 ps-3 ">
+                <a href="#inicio" class="nav-link ">inicio</a>
+              </li>
+              <li class="nav-item  w-100 ps-3">
+                <a href="#productos" class="nav-link">productos</a>
+              </li>
+              <li class="nav-item  w-100 ps-3">
+                <a href="#información" class="nav-link">información</a>
+              </li>
+              <li class="nav-item  w-100 ps-3">
+                <a href="#contacto" class="nav-link">contacto</a>
+              </li>
+              <li class="nav-item  w-100 ps-3">
+                <a href="detalleProducto.html" target="_self" rel="noopener noreferrer" class="nav-link">detalle</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Modal carrito 2 -->
+          <div class="d-none d-md-block p-3 pe-auto" data-bs-toggle="modal" data-bs-target="#modalcarrito2"> 
+            <img class="" src="img/carrito.png" alt="carrito de compras">                
+          </div>      
+          <!-- Modal carrito 2 -->        
+        </nav>         
+          <!-- Modal carrito 1 -->
+                      <div class="modal fade" id="modalcarrito1" tabindex="-1" aria-labelledby="carrito1h" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="carrito1h">Carrito de compras</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                            </div>
+                            <div class="modal-body">
+                              <p>Su carrito esta vacío.</p>                              
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+          <!-- Modal carrito 1 -->               
+          <!-- Modal carrito 2 -->
+              <div class="modal fade" id="modalcarrito2" tabindex="-1" aria-labelledby="carrito2h" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="carrito2h">Carrito de compras</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                      <p>Su carrito esta vacío.</p>                   
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Aceptar</button>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+          <!-- Modal carrito 2 -->
+    </header>
+
+  <section id="inicio">
+
+<!-- revisar etiquetas y nombre correctos -->
+
+    <h1 class="text-center mt-5 pt-5 display-2 fw-bold">AeroVision</h1>  
+     <div id="carouselPortada" class="carousel slide ">
+      <div class="carousel-indicators ">
+        <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="0" class="active bg-secondary" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="1" class="bg-secondary " aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselPortada" data-bs-slide-to="2" class="bg-secondary " aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+         <div class="carousel-item active ">     
+            <figure class=""><img src="img/galeria/Matrice-300RTK/M300-RTK-LG.png" class="d-block mx-auto img-fluid" alt="Drone Matrice-300RTK"></figure>   <!--d-block mx-auto w-100 c-img -->
+            <div class="carousel-caption text-black d-none d-md-block">
+              <h5>DJI Matrice-300RTK</h5>
+              <p>Autonomía de vuelo de 55 minutos y una transmición de hasta 15km de distancia.</p>
+            </div>         
+        </div>
+        <div class="carousel-item ">
+          <figure><img src="img/galeria/Matrice-30-series/Matrice-30t-LG.png" class="d-block mx-auto img-fluid" alt="Drone Matrice-30T"></figure>
+          <div class="carousel-caption text-black d-none d-md-block">
+            <h5>DJI Matrice-30T</h5>
+            <p>Adaptable a entornos hostiles, resistente al agua y una tolerancia a temperaturas de -20 °C a 50 °C.</p>
+          </div>
+        </div>
+        <div class="carousel-item ">
+          <figure><img src="img/galeria/Mavic-3Multispectral/Mavic-3Multispectral-LG.png" class="d-block mx-auto img-fluid" alt="Drone Multispectral"></figure>
+          <div class="carousel-caption text-black d-none d-md-block">
+            <h5>DJI Multispectral</h5>
+            <p class="">Con una cámara RGB de 20 MP y cuatro cámaras multiespectrales de 5 MP para escanear y analizar el crecimiento de los cultivos con total claridad.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselPortada" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-secondary rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselPortada" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-secondary rounded-circle" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>   
+  
+    
+    <div class="container my-5 ">
+      <div class="row g-4"> 
+        <div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center">
+          <p class="fs-5 fw-semibold lh-lg  ">AeroVision fue fundada en 2015. Nos enfocamos en el desarrollo de drones para uso comercial e industrial, ofreciendo soluciones para sectores como la agricultura, la construcción y la vigilancia. También incluimos drones recreativos, adaptándonos a las necesidades del mercado. Hoy en día somos reconocidos por nuestro compromiso con la seguridad y la eficiencia de nuestros productos.</p>
+        </div>
+        <div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center"> 
+          <figure>
+            <img src="img/DroneAgriculturax490.jpg" alt="Drone fumigando una siembra de maíz" class="img-fluid rounded mb-3">
+            <figcaption>Drones fumigando una siembra de maíz.</figcaption>
+          </figure>
+        </div>
+      
+        <div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center">
+          <figure><img src="img/DroneIndustriax490.jpg" alt="Drone tomando fotos del abance de una obra en construccion" class="img-fluid rounded mb-3">
+            <figcaption>Drone tomando fotos del abance de una obra en construcción.</figcaption>
+          </figure>
+        </div>
+        <div class="col-12 col-lg-6 d-flex flex-column align-items-center justify-content-center">  
+          <p class="fs-5 fw-semibold lh-lg ">Nuestra filosofía se centra en la creación de tecnología accesible y sostenible, buscando minimizar el impacto ambiental y maximizar los beneficios para nuestros clientes. Nos esforzamos por innovar y ser líderes en el desarrollo de soluciones aéreas. Nuestro objetivo es facilitar el trabajo en diversos sectores y consolidarnos como un referente lider, manteniendo altos estándares de calidad, ética y responsabilidad social en cada proyecto que emprendemos.</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <section id="productos">  
+    <h2 class="text-center mb-4">Galería de Productos</h2>
+      <div class="container my-5">
+        <div class="row">
+      <!-- CARD 1 -->        
+        <div class="col-12 col-md-6 col-lg-4 my-3 "> 
+          <div class="card  h-100 ">
+            <figure class=" ">
+              <figcaption class="text-center mt-3"><h3 class="card-title">Matrice-300RTK</h3></figcaption>
+              <img class="card-img-top" src="img/galeria/Matrice-300RTK/M300-RTK-SM.png" alt="Drone Matrice 300RTK">
+            </figure>
+            <div class="card-body d-flex flex-column  justify-content-between">
+              <p class="fs-5">
+                <span class="text-warning">★</span>
+                <span class="text-warning">★</span>
+                <span class="text-warning">★</span>
+                <span class="text-warning">★</span>
+                <span class="text-warning">★</span>
+              <p class="card-text">Matrice-300RTK esta diseñado para realizar misiones profesionales exigentes en entornos hostiles.</p>
+              <p class="card-subtitle fs-5 text-center mb-3 fw-bold">$9.000.000</p>
+              <!-- <p class="card-text">Diseñado para realizar misiones profesionales exigentes en entornos hostiles. Con una transmisión que utiliza un sistema de cuatro antenas para control y transmisión de datos en vivo hasta 20 km de distancia. Capaz de alcanzar velocidades de hasta 83,6 km/h, puede soportar altitudes de hasta 7 km, vientos de hasta 43,4 km/h y temperaturas desde escalofriantes -20°C hasta abrasadores 50°C.</p> -->
+              <a class="btn btn-sm btn-primary w-50" href="detalleProducto.html">Comprar</a> 
+            </div>
+          </div>
+        </div> 
+      <!-- CARD 2 -->
+          <div class="col-12 col-md-6 col-lg-4 my-3 ">
+            <div class="card h-100 ">
+              <figure>
+                <figcaption class="text-center mt-3"><h3 class="card-title">DJI Mini 3</h3></figcaption>
+                <img class="card-img-top" src="img/galeria/Mini-3/Mini-3-SM.png" alt="Drone DJI mini 3">
+              </figure>
+              <div class="card-body d-flex flex-column  justify-content-between">
+                <p class="fs-5">
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-muted">☆</span>
+                  <span class="text-muted">☆</span> 
+                </p>
+                <p class="card-text">DJI mini 3 con un peso de 249 gramos, cuenta con una autonomía de vuelo de 34 minutos.</p>
+                <p class="card-subtitle fs-5 text-center mb-3 fw-bold">$1.600.000</p>
+                <!-- <p class="card-text">Como toda la linea Mini tiene un peso de 249 gramos, cuenta con una autonomía de vuelo de 34 minutos y una camara con una resolución máxima de 4K.</p>--> 
+                <a class="btn btn-sm btn-primary w-50" href="detalleProducto.html">Comprar</a> 
+              </div>
+            </div>
+          </div>
+        <!-- CARD 3 -->
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="card h-100">
+              <figure class="">
+                <figcaption class="text-center mt-3"><h3 class="card-title">DJI Mini 4</h3></figcaption>
+                <img class="card-img-top" src="img/galeria/Mini-4/Mini-4-SM.png" alt="Drone DJI mini 4">
+              </figure>
+              <div class="card-body d-flex flex-column  justify-content-between">
+                <p class="fs-5">
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-muted">☆</span> 
+                </p>
+                <p class="card-text">DJI mini 4 diseñado para brindar una experiencia de vuelo excepcional, capaz de grabar videos en formato vertical en HDR a 4K/60fps.</p>
+                <p class="card-subtitle fs-5 text-center mb-3 fw-bold">$1.800.000</p>
+                <!-- <p class="card-text">Diseñado para brindar una experiencia de vuelo excepcional, capaz de grabar videos en formato vertical en HDR a 4K/60fps y con una autonomía de vuelo de 34 minutos permite capturar momentos en alta definición.</p> -->
+                <a class="btn btn-sm btn-primary w-50" href="detalleProducto.html">Comprar</a> 
+              </div>
+            </div>
+          </div>
+        <!-- CARD 4 -->
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="card h-100">
+              <figure class="">
+                <figcaption class="text-center mt-3"><h3 class="card-title">Matrice-30</h3></figcaption>
+                <img class="card-img-top" src="img/galeria/Matrice-30-series/Matrice-30t-SM.png" alt="Drone DJI Matrice-30">
+              </figure>
+              <div class="card-body d-flex flex-column  justify-content-between">
+                <p class="fs-5">
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-muted">☆</span>
+                <p class="card-text">Matrice-30 esta diseñado para uso en industrias de Energía, seguridad, búsqueda y rescate, en las  condiciones más difíciles.</p>
+                <p class="card-subtitle fs-5 text-center mb-3 fw-bold">$6.000.000</p>               
+                <!-- <p class="card-text">Diseñado para uso en industrias de Energía, seguridad, búsqueda y rescate, en las  condiciones más difíciles, la serie Matrice 30 Enterprise de DJI soporta agua, suciedad, polvo, viento y temperaturas extremas entre -20°C y 50°C gracias a la protección IP55.</p> -->
+                <a class="btn btn-sm btn-primary w-50" href="detalleProducto.html">Comprar</a> 
+              </div>
+            </div>
+          </div>
+        <!-- CARD 5 -->          
+          <div class="col-12 col-md-6 col-lg-4 my-3  ">
+            <div class="card h-100">
+              <figure class="">
+                <figcaption class="text-center mt-3"><h3 class="card-title">DJI Mini 2</h3></figcaption>
+                <img class="card-img-top" src="img/galeria/Mini-2/mini-2-SM.png" alt="Drone DJI mini 2">
+              </figure>
+              <div class="card-body d-flex flex-column  justify-content-between">
+                <p class="fs-5">
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-muted">☆</span>
+                  <span class="text-muted">☆</span>
+                  <span class="text-muted">☆</span> 
+                </p>
+                <p class="card-text">DJI mini 2 cuenta una autonomía de vuelo de 28 minutos y captura imágenes en una resolución máxima de 2.7K.</p>
+                <p class="card-subtitle fs-5 text-center mb-3 fw-bold">$1.200.000</p>
+                <a class="btn btn-sm btn-primary w-50" href="detalleProducto.html">Comprar</a>
+              </div>
+            </div>
+          </div>          
+        <!-- CARD 6 -->
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="card h-100">
+              <figure class="">
+                <figcaption class="text-center mt-3"><h3 class="card-title">Multispectral</h3></figcaption>
+                <img class="card-img-top" src="img/galeria/Mavic-3Multispectral/Mavic-3Multispectral-SM.png" alt="Drone Multispectral">
+              </figure>
+              <div class="card-body d-flex flex-column  justify-content-between">
+                <p class="fs-5">
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                <p class="card-text">Multispectral combina una cámara RGB con una cámara multiespectral para escanear y analizar los cultivos. Ofrece 43 minutos de vuelo.</p>
+                <p class="card-subtitle fs-5 text-center mb-3 fw-bold">$3.200.000</p>
+                <a class="btn btn-sm btn-primary w-50" href="detalleProducto.html">Comprar</a>
+              </div>
+            </div>
+          </div>
+        <!-- CARD 7 -->
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="card h-100">
+              <figure class="">
+                <figcaption class="text-center mt-3"><h3 class="card-title">DJI Air 3</h3></figcaption>
+                <img class="card-img-top" src="img/galeria/Air-3/Air-3-SM.png" alt="Drone DJI Air 3">
+              </figure>
+              <div class="card-body d-flex flex-column  justify-content-between">
+                <p class="fs-5">
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                <p class="card-text">DJI Air 3 plegable y compacto con dos cámaras: gran angular y teleobjetivo medio 3x. Con un tiempo máximo de 46 minutos.</p>
+                <p class="card-subtitle fs-5 text-center mb-3 fw-bold">$2.000.000</p>
+                <a class="btn btn-sm btn-primary w-50" href="detalleProducto.html">Comprar</a> 
+              </div>
+            </div>
+          </div>
+        <!-- CARD 8 -->
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="card h-100">
+              <figure class="">
+                <figcaption class="text-center mt-3"><h3 class="card-title">Mavic 3 Pro</h3></figcaption>
+                <img class="card-img-top" src="img/galeria/Mavic-3Pro/Mavic-3Pro-SM.png" alt="Drone DJI Mavic 3 Pro">
+              </figure>
+              <div class="card-body d-flex flex-column  justify-content-between">
+                <p class="fs-5">
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-muted">☆</span>
+                <p class="card-text">Mavic 3 Pro este drone es capaz de volar durante 43 minutos, cuenta con tres camaras diferentes permitiendo una calidad profesional de video cine.</p>
+                <p class="card-subtitle fs-5 text-center mb-3 fw-bold">$5.200.000</p>
+                <a class="btn btn-sm btn-primary w-50" href="detalleProducto.html">Comprar</a> 
+              </div>
+            </div>
+          </div>
+        <!-- CARD 9 -->
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="card h-100">
+              <figure class="">
+                <figcaption class="text-center mt-3"><h3 class="card-title">DJI Avata 2</h3></figcaption>
+                <img class="card-img-top" src="img/galeria/Avata/Avata-2-SM.png" alt="Drone DJI Avata 2">
+              </figure>
+              <div class="card-body d-flex flex-column  justify-content-between">
+                <p class="fs-5">
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-muted">☆</span>                 
+                <p class="card-text">DJI Avata 2 gracias a su avanzado sistema de estabilización y su potente cámara, captura imágenes y videos permitiéndote realizar movimientos acrobáticos.</p>
+                <p class="card-subtitle fs-5 text-center mb-3 fw-bold">$2.900.000</p>
+                <a class="btn btn-sm btn-primary w-50" href="detalleProducto.html">Comprar</a> 
+              </div>
+            </div>
+          </div>
+        <!-- CARD 10 -->
+          <div class="col-12 col-md-6 col-lg-4 my-3">
+            <div class="card h-100">
+              <figure class="">
+                <figcaption class="text-center mt-3"><h3 class="card-title">DJI Neo</h3></figcaption>
+                <img class="card-img-top" src="img/galeria/Neo/Neo-SM.png" alt="Drone DJI Neo">
+              </figure>
+              <div class="card-body d-flex flex-column justify-content-between">
+                <p class="fs-5">
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-warning">★</span>
+                  <span class="text-muted">☆</span>
+                  <span class="text-muted">☆</span>
+                <p class="card-text">DJI Neo es ultraligero, puede despegar y aterrizar desde y hacia la palma la mano y realizar filmaciones inteligentes como seguimientos a un objetivo.</p>
+                <p class="card-subtitle fs-5 text-center mb-3 fw-bold">$900.000</p>
+                <a class="btn btn-sm btn-primary w-50" href="detalleProducto.html">Comprar</a> 
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</section>
+
+<section id="información" class="">
+    <div class="container my-5">
+      <h1 class="text-center mb-4">Galería de Fotos</h1>
+      
+
+      
+       
+      
+      <div class="row g-3">
+          
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center justify-content-between h-100">              
+                  <img src="https://via.placeholder.com/300" class="card-img-top rounded-circle" alt="Foto de baterías de litio">
+                  <div class="text-center my-4 px-3">
+                      <h5 class="">Baterías</h5>
+                      <p class="">Nuestros Drones cuentan con baterias de litio cuya durabilidad y calidad respetan los más altos estándares.</p>
+                  </div>              
+          </div>
+
+         
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center justify-content-between h-100">               
+                  <img src="https://via.placeholder.com/300" class="card-img-top rounded-circle" alt="Foto de control remoto de Drone">
+                  <div class="text-center my-4 px-3">
+                      <h5 class="">Control Remoto RC 2</h5>
+                      <p class="">Los RC 2 de DJI cuentan con cámara de última generación y señal de transmición de alta frecuencia.</p> 
+                  </div>
+          </div>
+
+         
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center justify-content-between h-100">               
+                  <img src="https://via.placeholder.com/300" class="card-img-top rounded-circle" alt="Foto de Hélices de Drone">
+                  <div class="text-center my-4 px-3">
+                      <h5 class="">Hélices</h5>
+                      <p class="">Están compuestas por fibra de carbono, nailon, fibra de vidrio y titanio inoxidable.</p>
+                  </div>               
+          </div>
+
+         
+          <div class="col-12 col-sm-6 col-md-4 col-lg-3 d-flex flex-column align-items-center justify-content-center justify-content-between h-100">               
+                  <img src="https://via.placeholder.com/300" class="card-img-top rounded-circle" alt="Foto de Gimbal estabilizador">
+                  <div class="text-center my-4 px-3">
+                      <h5 class="">Gimbal</h5>
+                      <p class="">Todos nuestros Drones poseen estabilizadores de cámara que permiten grabar tomas en movimiento.</p>
+                  </div>              
+          </div>
+      </div>
+  </div>
+
+    <h2 class="mb-3">Video</h2>
+  <div class="container">
+    <div class="row g-4">
+      <div class="videodiv col-12 col-lg-6 d-flex align-items-center justify-content-center ">
+        <iframe class="w-75" src="https://www.youtube.com/embed/913QLGZhF0M?si=wHk8X7MFFQsHwx9A" title="YouTube video player"  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>  
+      <div class="col-12 col-lg-6 d-flex align-items-center justify-content-center">
+        <iframe class="w-75" src="https://www.youtube.com/embed/ge6US1wqWgE?si=f6zJoUSWxkoO6fxB" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+
+</section> 
+  
+  <section id="contacto" class="">
+       
+    <h2 class="text-center py-5">Contactanos</h2>
+
+
+      <form class="row g-3 m-auto  p-3  bg-primary-subtle border-primary-subtle rounded-3 w-75  ">
+        <div class="col-md-6">
+          <label for="nombre" class="form-label">Nombre:</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+        </div>
+        <div class="col-md-6">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" class="form-control" id="email" placeholder="email@ejemplo.com">
+        </div>
+        <div class="col-12">
+          <label for="telefono" class="form-label">Teléfono:</label>
+          <input type="tel" class="form-control" id="telefono" placeholder="Escribe tu número de teléfono">
+        </div>
+        <div class="col-12">
+          <label for="comentario" class="form-label">En que podemos ayudarte?</label>
+          <textarea class="form-control" id="comentario" placeholder="Escribe tu comentario"></textarea>          
+        </div>
+        <div class="col-12 botonenviar text-end">
+          <button type="submit" class=" btn btn-primary botonenviar">Enviar</button>
+        </div>
+      </form>  
+
+  </section>
+<footer>
+      <div class="bg-dark text-white mt-5 py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Datos de la Compañía</h5>
+                    <ul class="list-unstyled">
+                        <li>AeroVision</li>
+                        <li>Dirección: Calle Falsa 123, Ciudad de Buenos Aires</li>
+                        <li>Teléfono: (154) 114568-7890</li>
+                        <li>Email: AeroVision@hotmail.com</li>
+                    </ul>
+                </div>
+                <div class="col-md-4 d-flex flex-column align-items-center justify-content-center ">
+                  
+                  <button type="button" class="btn btn-secondary  " data-bs-toggle="modal" data-bs-target="#autor">
+                    Autor
+                  </button>
+
+                  
+                  <div class="modal fade" id="autor" tabindex="-1" aria-labelledby="autorLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h5 class="modal-title" id="autorLabel">Datos del Autor</h5>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body d-flex flex-column align-items-center justify-content-center justify-content-between h-100">
+                          <figure class="text-center"><img src="img/FotoLucas.jpg" alt="Foto perfil alumno"></figure>
+                          <ul class="list-unstyled text-black">
+                            <li>Lucas Schamun</li>
+                            <li>Email: lucasschamun@hotmail.com</li>
+                            <li>Carrera: Diseño y desarrollo web</li>
+                            <li>Materia: Interacción con dispositivos moviles</li>
+                            <li>Año: 2024</li>
+                            <li>Cuatrimestre cursado: Segundo Cuatrimestre 2023</li>
+                            <li>Red social Opcional</li>
+                        </ul>
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>                          
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            
+                </div>
+                <div class="col-md-4 d-flex flex-row align-items-center justify-content-center ">
+                    <!-- <h5>Redes Sociales</h5> -->
+                    <ul class="list-unstyled d-flex  ">
+                        <li class="me-4"><a href="https://www.facebook.com/?locale=es_LA"><i class="fab fa-facebook-f"><img src="img/redes/facebook.png" alt="Icono de facebook"></i></a></li>
+                        <li class="me-4"><a href="https://x.com/?lang=es"><i class="fab fa-twitter"><img src="img/redes/gorjeo.png" alt="Icono de X"></i></a></li>
+                        <li class=" "><a href="https://www.instagram.com/"><i class="fab fa-linkedin-in"><img src="img/redes/social.png" alt="Icono de instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+             <!-- <hr class="my-4">  -->
+            <div class="text-center">
+                <p>&copy; 2024 <span class="fw-bold">AeroVision</span>. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div> 
+</footer>   
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

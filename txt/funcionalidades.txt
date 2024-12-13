@@ -1,0 +1,6 @@
+Funcionalidades:
+En esta entrega he utilizado diversos componentes de Boostrap 5:
+- un barra de navegacion que en los breakpoints mas pequeños colapsa un menu hamburguesa.
+- en dos oportunidades utilice un carrusel tanto en la pagina principal en la primera seccion mostrando 3 productos distintos, y en la pagina "detalle del producto" mostrando distintas vistas de un mismo producto.
+- En cuanto a la grilla de boostrap 5 la he utilizado en contadas ocaciones, como lo es en la seccion principal cambiando la configuracion en dos breakpoints, en la galeria de prductos cambiando su configuracion en 3 breakpoints y en otras secciones cambiando su configuracion siemppre entre dos o tres breakpoints.
+- Tambien he utilizado la grilla en el formulario de contacto cambiando la posicion de elementos como el campo de nombre y apellido en disttintos breakpoints.
